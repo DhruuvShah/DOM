@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  padding: 20px;
+  background-color: #F1F4F9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+}
+body .view-1,
+body .view-2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 60px;
+  margin-bottom: 20px;
+}
+body .view-1 .card,
+body .view-2 .card {
+  display: flex;
+  flex-direction: column;
+  background-color: #FFFFFF;
+  text-align: center;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 270px;
+}
+body .view-1 .card .profile-image,
+body .view-2 .card .profile-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+body .view-1 .card .profile-image img,
+body .view-2 .card .profile-image img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body .view-1 .card .details,
+body .view-2 .card .details {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+body .view-1 .card .details #Profession,
+body .view-2 .card .details #Profession {
+  opacity: 0.9;
+}
+body .view-1 .card .details #Title,
+body .view-2 .card .details #Title {
+  color: #58AAFE;
+}
+body .view-1 .card .skills,
+body .view-2 .card .skills {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  text-align: center;
+  justify-content: center;
+  padding: 15px 0;
+}
+body .view-1 .card .skills span,
+body .view-2 .card .skills span {
+  background-color: #e0e0e0;
+  color: #333;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.8em;
+}
+body .view-1 .card .skills span.more-skills,
+body .view-2 .card .skills span.more-skills {
+  background-color: #58AAFE;
+  color: white;
+}
+body .view-1 .card .about-person,
+body .view-2 .card .about-person {
+  padding: 15px;
+  line-height: 1.5;
+}
+body .view-1 .card .about-person p,
+body .view-2 .card .about-person p {
+  font-size: 12px;
+  font-weight: 400;
+  opacity: 0.5;
+}
+body .view-1 .card .hire,
+body .view-2 .card .hire {
+  display: flex;
+  flex-direction: column;
+}
+body .view-1 .card .hire button,
+body .view-2 .card .hire button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  color: #111;
+  cursor: pointer;
+}
+body .view-1 .card .hire button:hover,
+body .view-2 .card .hire button:hover {
+  background-color: #58AAFE;
+  color: #fff;
+}/*# sourceMappingURL=style.css.map */
