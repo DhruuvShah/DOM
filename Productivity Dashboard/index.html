@@ -4,33 +4,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./apple-touch-icon.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
     <link rel="stylesheet" href="style.css">
-    <title>Peoductivity Dashboard</title>
+    <title>Productivity Dashboard</title>
 </head>
 
 <body>
     <div id="main">
+        <nav>
+            <div class="nav-in">
+                <h2>Productivity Dashboard</h2>
+                <div class="theme">
+                    <h4>Change Theme</h4>
+                </div>
+            </div>
+        </nav>
         <section class="allElems">
-            <div class="todo elem" id="0">
-                <img src="Todo.png" alt="">
-                <h2>To do List</h2>
-            </div>
-            <div class="daily elem" id="1">
-                <img src="Daily Planner.png" alt="">
-                <h2>Daily Planner</h2>
-            </div>
-            <div class="moti elem" id="2">
-                <img src="Motivation.png" alt="">
-                <h2>Motivation</h2>
-            </div>
-            <div class="pomo elem" id="3">
-                <img src="Pomodoro.png" alt="">
-                <h2>Pomodoro</h2>
-            </div>
-            <div class="goals elem" id="4">
-                <img src="Daily Goals.png" alt="">
-                <h2>Daily Goals</h2>
+            <header>
+                <div class="header1">
+                    <h2>31 May 2025</h2>
+                    <h1>Saturday, 8:00 am</h1>
+                    <h4>Ahmedabad Gujrat</h4>
+                </div>
+                <div class="header2">
+                    <h2>37°C</h2>
+                    <h4>Partly Cloudy</h4>
+                    <h3 class="precipitation">Precipitation: 0%</h3>
+                    <h3 class="humidity">Humidity: 41%</h3>
+                    <h3 class="wind">Wind: 21 km/h</h3>
+                </div>
+            </header>
+            <div class="allFeatures">
+                <div class="todo elem" id="0">
+                    <img src="Todo.png" alt="">
+                    <h2>To do List</h2>
+                </div>
+                <div class="daily elem" id="1">
+                    <img src="Daily Planner.png" alt="">
+                    <h2>Daily Planner</h2>
+                </div>
+                <div class="moti elem" id="2">
+                    <img src="Motivation.png" alt="">
+                    <h2>Motivation</h2>
+                </div>
+                <div class="pomo elem" id="3">
+                    <img src="Pomodoro.png" alt="">
+                    <h2>Pomodoro</h2>
+                </div>
+                <div class="goals elem" id="4">
+                    <img src="Daily Goals.png" alt="">
+                    <h2>Daily Goals</h2>
+                </div>
             </div>
         </section>
 
@@ -60,7 +85,7 @@
             <h2>Plan your Day to be more Productive</h2>
 
             <div class="day-planner">
-                
+
             </div>
 
 
@@ -69,19 +94,19 @@
             <button class="back" id="2">Back</i></button>
             <div class="motivation-fullPage-container">
                 <div class="motivation-container">
-                <div class="motivation-wrapper">
-                    <img src="icons8-quote-100.png" alt="">
-                    <div class="motivation-1">
-                        <h2>Quote of the day</h2>
-                    </div>
-                    <div class="motivation-2">
-                        <h1></h1>
-                    </div>
-                    <div class="motivation-3">
-                        <h2></h2>
+                    <div class="motivation-wrapper">
+                        <img src="icons8-quote-100.png" alt="">
+                        <div class="motivation-1">
+                            <h2>Quote of the day</h2>
+                        </div>
+                        <div class="motivation-2">
+                            <h1></h1>
+                        </div>
+                        <div class="motivation-3">
+                            <h2></h2>
+                        </div>
                     </div>
                 </div>
-            </div>
             </div>
         </section>
         <section class="fullElem pomodoro-fullpage">
@@ -98,6 +123,15 @@
         <section class="fullElem daily-golas-fullpage">
             <button class="back" id="4">Back</i></button>
             <h2>Daily Goals</h2>
+            <div class="goals-container">
+                <h1>Daily Goals</h1>
+                <form class="add-goal-form">
+                    <input type="text" id="goal-input" placeholder="Add a new goal..." maxlength="32" required />
+                    <button type="submit">Add</button>
+                </form>
+                <div class="goals-list"></div>
+            </div>
+
         </section>
     </div>
     <script src="script.js"></script>
